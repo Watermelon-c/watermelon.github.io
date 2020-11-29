@@ -1,0 +1,479 @@
+@media only screen and (max-width: 1080px), only screen and (max-device-width:1080px) {
+    html,body {
+        font-size:33.75px;
+    }
+  }
+    @media only screen and (max-width: 960px), only screen and (max-device-width:960px) {
+    html,body {
+        font-size:30px;
+    }
+  }
+    @media only screen and (max-width: 800px), only screen and (max-device-width:800px) {
+    html,body {
+        font-size:25px;
+    }
+  }
+    @media only screen and (max-width: 720px), only screen and (max-device-width:720px) {
+    html,body {
+        font-size:22.5px;
+    }
+  }
+    @media only screen and (max-width: 640px), only screen and (max-device-width:640px) {
+    html,body {
+        font-size:20px;
+    }
+  }
+    @media only screen and (max-width: 600px), only screen and (max-device-width:600px) {
+    html,body {
+        font-size:18.75px;
+    }
+  }
+    @media only screen and (max-width: 540px), only screen and (max-device-width:540px) {
+    html,body {
+        font-size:16.875px;
+    }
+  }
+    @media only screen and (max-width: 480px), only screen and (max-device-width:480px) {
+    html,body {
+        font-size:15px;
+    }
+  }
+    @media only screen and (max-width: 414px), only screen and (max-device-width:414px) {
+    html,body {
+        font-size:12.9375px;
+    }
+  }
+    @media only screen and (max-width: 400px), only screen and (max-device-width:400px) {
+    html,body {
+        font-size:12.5px;
+    }
+  }
+    @media only screen and (max-width: 375px), only screen and (max-device-width:375px) {
+    html,body {
+        font-size:11.71875px;
+    }
+  }
+    @media only screen and (max-width: 360px), only screen and (max-device-width:360px) {
+    html,body {
+        font-size:11.25px;
+    }
+  }
+    @media only screen and (max-width: 320px), only screen and (max-device-width:320px) {
+    html,body {
+        font-size:10px;
+    }
+  }
+    @media only screen and (max-width: 240px), only screen and (max-device-width:240px) {
+    html,body {
+        font-size:7.5px;
+    }
+  }
+ body{
+   background-color: #f4f5f6;
+}
+*{
+   margin: 0;
+   padding: 0;
+}
+ul li {
+   list-style: none;
+}
+a{
+   text-decoration: none;
+   color: #252525;
+}
+@background:#fff;
+@titlefontsize:1.1rem;
+
+.header{
+	height: 6.8625rem;
+    border-bottom: solid 1px #f1f1f1;
+    position: fixed;
+    top: 0;
+}
+.header .search-box{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 4.125rem;
+	background-color: #D43D3D;
+}
+.header .search-box form{
+	position: relative;
+	flex: 1;
+	margin-left: 0.5rem;
+	margin-bottom: 0;
+}
+.header .search-box form input{
+	height: 3rem;
+	text-indent: 2.34375rem;
+	width: 100%;
+	border-radius: 3px;
+	font-size: 1.24999875rem;
+}
+.header .search-box form input::placeholder{
+	color: black;
+}
+.header .search-box form .icon-sousuo{
+	position: absolute;
+	left: 0.7812487499999999rem;
+	top: 0.7125rem;
+	font-size: 1.425rem;
+	color: #5b5b5b;
+}
+
+/* 发布按钮 */
+.header .search-box .camera{
+	flex-basis: 3.9062475rem;
+	text-align: center;
+	margin-top: -0.1562475rem;
+}
+.header .search-box .camera .icon-weibiaoti553{
+	font-size: 2.4999975rem;
+	color: white;
+}
+.header .search-box .camera p{
+	font-size: 1.125rem;
+	transform: scale(0.75);
+	margin-top: -0.6249975rem;
+	color: white;
+}
+
+/* 顶部导航 高35px */
+.header-nav{
+	height: 2.7343725rem;
+	overflow: auto;
+    width: 100%;
+    background: #fff;
+}
+.header-nav ul{
+	height: 2.7343725rem;
+	width: 302%;
+}
+.header-nav ul li {
+	width: 3.9062475rem;
+	height: 2.7343725rem;
+	float: left;
+	font-size: 1.24999875rem;
+	display: grid;
+	place-content: center;
+}
+.header-nav ul li a.active{
+	color: #D43D3D;
+}
+
+/* 导航按钮 */
+.header-nav .nav-menu{
+	height: 2.7343725rem;
+	width: 3.12499875rem;
+	position: absolute;
+	right: 0;
+	top: 4.1406225rem;
+	background: linear-gradient(to right , rgba(255,253,255,0.9) 20%,#fff 20%);
+	display: grid;
+	place-content: center;
+} 
+.header-nav .nav-menu:before{
+	content: '';
+	height: 70%;
+	width: 0.05rem;
+	background-color: #f1f1f1;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+}
+.novel_nav{
+   margin-top: 7rem;
+   width: 100%;
+   background-color: @background;
+   height: 5rem;
+   ul{
+       display: flex;
+       justify-content: space-around;
+       
+       li{
+           a{
+               color: #252525;
+               div{
+                   width: 100%;
+                   height: 1.5rem;
+                   margin: 1rem 0 0.5rem;
+                   
+               }
+           }
+           &:nth-child(1){
+               div{
+                   background: url("../images/男.png") no-repeat;
+                   background-size: 100% 100%;
+               }
+               
+           }
+           &:nth-child(2){
+               div{
+                   background: url("../images/女.png") no-repeat;
+                   background-size: 100% 100%;
+               }
+               
+           }
+           &:nth-child(3){
+               div{
+                   background: url("../images/书籍.png") no-repeat;
+                   background-size: 100% 100%;
+               }
+               
+           }
+           &:nth-child(4){
+               div{
+                   background: url("../images/放大镜.png") no-repeat;
+                   background-size: 100% 100%;
+               }
+               
+           }
+           &:nth-child(5){
+               div{
+                   background: url("../images/档案.png") no-repeat;
+                   background-size: 100% 100%;
+               }
+               
+           }
+           h4{
+               font-size: 0.9rem;
+               font-weight: 500;
+           }
+
+           
+       }
+
+   }
+
+}
+.novel_set{
+   width: 100%;
+   height: 3rem;
+   background-color: @background;
+   margin: 0.25rem 0;
+   
+   a{
+       padding: 1rem 0;
+       width: 100%;
+       color: #252525;
+       // display: flex;
+       display: block;
+       .left{
+           // flex: 0 0 92%;
+           float: left;
+           span{
+               &:nth-child(1){
+                   display: inline-block;
+                   width: 1rem;
+                   height: 1rem;
+                   background: url("../images/读书会.png");
+                   background-size: 100% 100%;
+                   vertical-align: middle;
+                   margin: 0 0.5rem 0 1.25rem;
+               }
+               &:nth-child(2){
+                   font-size: 0.8rem;
+                   
+               }
+           }
+           
+       }
+       .right{
+           // flex: 0 0 1rem;
+           float: right;
+           width: 1rem;
+           height: 1rem;
+           margin-right: 1.25rem;
+           background: url("../images/右箭头.png");
+           background-size: 100% 100%;
+       }
+       
+   }
+   
+}
+.novel_ranking{
+   margin-bottom: 0.25rem;
+   width: 100%;
+   background-color: @background;
+   .ranking_nav{
+       width: 100%;
+       height: 2.5rem;
+       // display: flex;
+       line-height: 2.5rem;
+       .ranking_nav_left{
+           float: left;
+           padding-left: 1rem;
+           font-size: @titlefontsize;
+       }
+       a{
+           float: right;
+           margin-right: 1.25rem ;
+           span{
+               display: inline-block;
+               width: 1rem;
+               height: 1rem;
+               background: url("../images/右箭头.png");
+               background-size: 100% 100%;
+               vertical-align: -0.2rem;
+               
+           }
+       }
+
+   }
+   .ranking_tab{
+       .ranking_tab_nav{
+           padding: 0.5rem 0;
+           display: flex;
+           justify-content: space-around;
+           li{
+               padding: 0.25rem 1rem;
+               border: 1px solid #ccc;
+               border-radius: 25px;
+               overflow: hidden;
+               text-overflow:ellipsis;
+               white-space: nowrap;
+           }
+           li.active{
+               color: red;
+               border-color: red;
+           }
+       }
+       .ranking_tab_content{
+           margin-top: 0.75rem;
+           width: 100%;
+           display: flex;
+           // flex-direction: column;
+           flex-wrap: wrap;
+           justify-content: space-around;
+           li{
+               flex: 0 0 40%;
+               display: flex;
+               margin-bottom: 1.5rem;
+               &:nth-child(-n+3){
+                   span{
+                      color: red; 
+                   }
+                   
+               }
+               img{
+                   flex: 0 0 2.5rem;
+                   height: 5rem;
+                   border-radius: 10px;
+               }
+               
+               span{
+                   flex: 0 0 1.25rem;
+                   text-align: center;
+                   font-size: 0.9rem;
+                   
+               }
+               .right{
+                   h4{
+                       font-weight: 400;
+                       font-size: 0.9rem;
+                       text-overflow: -o-ellipsis-lastline;
+                       overflow: hidden;
+                       text-overflow: ellipsis;
+                       display: -webkit-box;
+                       -webkit-line-clamp: 2;
+                       line-clamp: 2;
+                       -webkit-box-orient: vertical;
+                       margin-bottom: 0.5rem;
+                   }
+                   p{
+                       font-size: 0.7rem;
+                       color: #666;
+                   }
+               }
+
+           }
+       }
+
+   }
+}
+.novel_recommend{
+   background-color: @background;
+   .novel_recommend_title{
+       margin-left: 1.25rem;
+       height: 2.5rem;
+       line-height: 2.5rem;
+       font-size: @titlefontsize;
+       font-weight: 500;
+   }
+   .novel_recommend_content{
+       padding: 0 1rem;
+       li{
+           a{
+               width: 100%;
+               display: flex;
+               padding: 1rem 0;
+               border-bottom: 1px solid #ccc;
+               .recommend_content_img{
+                   flex: 0 0 5rem;
+                   height: 7.5rem;
+                   margin-right: 1rem;
+                   img{
+                       width: 100%;
+                       height: 100%;
+       
+                       border-radius: 10px;
+                   }
+               }
+               
+               .right{
+                   flex: 0 0 70%;
+                   h4{
+
+                       font-size: 1rem;
+                       font-weight: 500;
+                       color:#000;
+                       padding: 0.75rem 0 1.5rem;
+                   }
+                   p{
+                       font-size: 0.9rem;
+                       // width: 17rem;
+                       height: 1.4rem;
+                       color: #666;
+                       margin-bottom: 0.625rem;
+                       overflow: hidden;
+                       // text-overflow:ellipsis;
+                       // white-space: nowrap;
+                   }
+               }
+           }
+       }
+   }
+}
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 4.6875rem;
+    width: 100%;
+    background: #f4f5f6;
+    margin-top: 15.624997500000001rem;
+  }
+  .footer ul {
+    height: 4.6875rem;
+    display: flex;
+  }
+  .footer ul li {
+    flex: 1;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    font-size: 0.9375rem;
+    display: grid;
+    place-content: center;
+  }
+  .footer ul li.active{
+    color: #f85959;
+  }
+  .footer ul li span {
+    font-size: 1.95312375rem;
+    margin-bottom: 0.1rem;
+  }
+  /* 底部 */

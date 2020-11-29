@@ -1,0 +1,55 @@
+@import '../font/iconfont.css';
+@import 'reset.css';
+.wrap {
+  min-width: 320px;
+  width: 100%;
+  background-color: #f5f6f7;
+}
+.wrap .header {
+  padding: 0 1rem;
+  background-color: #fff;
+  border-bottom: 1px solid #f3f3f3;
+}
+.wrap .header .tols {
+  height: 2rem;
+  line-height: 2rem;
+  text-align: center;
+}
+.wrap .header .tols .icon-left {
+  float: left;
+  font-size: 0.98rem;
+}
+.wrap .header .tols h3 {
+  margin: 0;
+  font-weight: normal;
+  font-size: 0.75rem;
+}
+.wrap .content {
+  background-color: #fff;
+}
+.wrap .content ul li {
+  height: 2rem;
+  line-height: 2rem;
+  padding: 0 1rem;
+  overflow: hidden;
+}
+.wrap .content ul li a {
+  color: #000;
+  display: block;
+  font-size: 0.65rem;
+}
+.wrap .content ul li a span.txt {
+  display: block;
+  margin-right: 1rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.wrap .content ul li a .more {
+  float: right;
+  font-size: 0.66rem;
+  color: #000;
+}
+.wrap .content ul li a .more span {
+  font-size: 0.56rem;
+}

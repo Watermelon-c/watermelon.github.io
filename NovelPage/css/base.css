@@ -1,0 +1,14 @@
+body{
+    background-color: #f4f5f6;
+}
+*{
+    margin: 0;
+    padding: 0;
+ }
+ ul li {
+    list-style: none;
+ }
+ a{
+    text-decoration: none;
+    color: #252525;
+ }

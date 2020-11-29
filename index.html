@@ -1,155 +1,142 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        *{
-            margin: 0;
-            padding: 0;
-        }
-        li{
-            list-style: none;
-        }
-        body{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            /* background-color: skyblue; */
-        }
-        ul{
-            position: relative;
-            display: flex;
-            height: 200px;
-        }
-        ul::after{
-            content: "没心没肺快乐双倍";
-            position: absolute;
-            top: 0;
-            left: 50%;
-            color: darkturquoise;
-            font-size: 30px;
-            font-weight: 700;
-            transform: translate(-50% , -700%);
-        }
-        li{
-            width: 20px;
-            height: 20px;
-            border-radius: 10px;
-            margin: 0 10px;
-        }
-        li:nth-child(1){
-            background-color: red;
-            animation: love1 5s 0s infinite;
-        }
-        li:nth-child(2){
-            background-color: darkturquoise;
-            animation: love2 5s 0.2s infinite;
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>昨天头条</title>
+		<link rel="shortcut icon" href="//sf3-dycdn-tos.pstatp.com/obj/eden-cn/uhbfnupkbps/toutiao_favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="font/iconfont.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+	</head>
+	<body>
+		<!-- 启动页 -->
+		<!-- <div class="startbg">
+			<img src="images/bg.jpg">
+			<button type="button" class="closeBg"><span>4s | </span>跳过</button>
+		</div> -->
+		<!-- 启动页 -->
+		<!-- 头部 -->
+		<header class="header">
+			<div class="search-box">
+				<!-- 搜索框 -->
+				<div class="from">
+					<span class="iconfont icon-sousuo"></span>
+					<input type="text" value="" placeholder="香港航班恢复正常 | 香港航班恢复正常 | 香港航班恢复正常" />
+				</div>
+				<div class="camera">
+					<span class="iconfont icon-weibiaoti553"></span>
+					<p>发布</p>
+				</div>
+			</div>
+			<nav class="header-nav clear">
+				<ul class="clear">
+					<li><a href="#" data-type=>关注</a></li>
+					<li><a href="index.html" data-type="__all__" class="active">推荐</a></li>
+					<li><a href="#" data-type="news_hot">热点</a></li>
+					<li><a href="./NovelPage/novel.html" class="xs">小说</a></li>
+					<li><a href="zuyuan/hls/sport.html" class="xs">体育</a></li>
+					<li><a href="#" data-type="news_society">社会</a></li>
+					<li><a href="#" data-type="news_entertainment">娱乐</a></li>
+					<li><a href="#" data-type="news_tech">科技</a></li>
+					<li><a href="#" data-type="news_military">军事</a></li>
+					<li><a href="#" data-type="news_car">汽车</a></li>
+					<li><a href="#" data-type="news_finance">财经</a></li>
+					<li><a href="#" data-type="news_world">国际</a></li>
+					<li><a href="#" data-type="news_fashion">时尚</a></li>
+					<li><a href="#" data-type="news_travel">旅游</a></li>
+					<li><a href="#" data-type="news_discovery">探索</a></li>
+					<li><a href="#" data-type="news_baby">育儿</a></li>
+					<li><a href="#" data-type="news_regimen">养生</a></li>
+					<li><a href="#" data-type="news_story">故事</a></li>
+					<li><a href="#" data-type="news_essay">美文</a></li>
+					<li><a href="#" data-type="news_game">游戏</a></li>
+					<li><a href="#" data-type="news_history">历史</a></li>
+					<li><a href="#" data-type="news_food">美食</a></li>
+				</ul>
+				<div class="nav-menu">
+					<span class="iconfont icon-liebiao1"></span>
+				</div>
+			</nav>
+		</header>
 
-        }
-        li:nth-child(3){
-            background-color: darksalmon;
-            animation: love3 5s 0.4s infinite;
+		<!-- 导航 -->
+		<!-- 头部结束 -->
+		<div class="flush">
+			<ul>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</div>
+		<!-- 内容 -->
+		<div class="container">
+			<div class="lstop">
+				<a href="#">
+					<p class="title">微纪录 | 致敬劳动者 奋进新时代</p>
+					<div class="msg clear">
+						<div class="upico">置顶</div>
+						<div class="author">央视新闻</div>
+						<div class="commentnum">127条评论</div>
+					</div>
+				</a>
+			</div>
+			<div class="lstop">
+				<a href="#">
+					<p class="title">要点来了!总书记重磅讲话温暖你我</p>
+					<div class="msg clear">
+						<div class="upico">置顶</div>
+						<div class="author">央视新闻</div>
+						<div class="commentnum">447条评论</div>
+					</div>
+				</a>
+			</div>
 
-        }
-        li:nth-child(4){
-            background-color: deeppink;
-            animation: love4 5s 0.6s infinite;
+			<div class="newscon">
+				<div class="con">
+					<p class="title">测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试</p>
+					<div class="newsimg floatR">
+						<img src="images/new_pic.jpg">
+					</div>
+				</div>
 
-        }
-        li:nth-child(5){
-            background-color: yellow;
-            animation: love5 5s 0.8s infinite;
+				<div class="msg clear">
+					<div class="author">新华社客户端</div>
+					<div class="commentnum">6532条评论</div>
+					<div class="close floatR">
+						<img src="images/err.jpg">
+					</div>
+				</div>
+			</div>
 
-        }
-        li:nth-child(6){
-            background-color: deeppink;
-            animation: love4 5s 1s infinite;
 
-        }
-        li:nth-child(7){
-            background-color: darksalmon;
-            animation: love3 5s 1.2s infinite;
+		</div>
+		<!-- 内容结束 -->
+		<!-- 脚部 -->
+		<footer class="footer">
+			<ul>
+				<li class="active">
+					<span class="iconfont icon-index"></span>
+					首页
+				</li>
+				<li>
+					<span class="iconfont icon-play"></span>
+					西瓜新闻
+				</li>
+				<li>
+					<span class="iconfont icon-huoshanxiaoshipin-"></span>
+					小视频
+				</li>
+				<li>
+					<span class="iconfont icon-weidengluzhuangtai"></span>
+					未登录
+				</li>
+			</ul>
+		</footer>
+		<!-- 脚部结束 -->
 
-        }
-        li:nth-child(8){
-            background-color: darkturquoise;
-            animation: love2 5s 1.4s infinite;
-        }
-        li:nth-child(9){
-            background-color: red;
-            animation: love1 5s 1.6s infinite;
-
-        }
-        @keyframes love1{
-            30%,50%{
-                height: 60px;
-                transform: translateY(-30px);
-            }
-            70%,100%{
-                height: 20px;
-                transform: translateY(0);
-            }
-        }
-
-        @keyframes love2{
-            30%,50%{
-                height: 125px;
-                transform: translateY(-60px);
-            }
-            70%,100%{
-                height: 20px;
-                transform: translateY(0);
-            }
-        }
-
-        @keyframes love3{
-            30%,50%{
-                height: 160px;
-                transform: translateY(-75px);
-            }
-            70%,100%{
-                height: 20px;
-                transform: translateY(0);
-            }
-        }
-
-        @keyframes love4{
-            30%,50%{
-                height: 180px;
-                transform: translateY(-60px);
-            }
-            70%,100%{
-                height: 20px;
-                transform: translateY(0);
-            }
-        }
-
-        @keyframes love5{
-            30%,50%{
-                height: 200px;
-                transform: translateY(-45px);
-            }
-            70%,100%{
-                height: 20px;
-                transform: translateY(0);
-            }
-        }
-    </style>
-</head>
-<body>
-    <ul>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-    </ul>
-</body>
+		<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.js"></script>
+		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/rem.js" type="text/javascript" charset="utf-8"></script>
+	</body>
 </html>

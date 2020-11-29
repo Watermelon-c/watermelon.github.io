@@ -1,0 +1,65 @@
+{
+  "id": "2227094",
+  "name": "头条",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "8103407",
+      "name": "右箭头",
+      "font_class": "danseshixintubiao-",
+      "unicode": "e62c",
+      "unicode_decimal": 58924
+    },
+    {
+      "icon_id": "17729049",
+      "name": "箭头",
+      "font_class": "jiantou1",
+      "unicode": "e83b",
+      "unicode_decimal": 59451
+    },
+    {
+      "icon_id": "17498907",
+      "name": "箭头",
+      "font_class": "jiantou",
+      "unicode": "e63c",
+      "unicode_decimal": 58940
+    },
+    {
+      "icon_id": "3402452",
+      "name": "评论",
+      "font_class": "pinglun",
+      "unicode": "e6ba",
+      "unicode_decimal": 59066
+    },
+    {
+      "icon_id": "3833182",
+      "name": "收藏",
+      "font_class": "shoucang",
+      "unicode": "e604",
+      "unicode_decimal": 58884
+    },
+    {
+      "icon_id": "6894488",
+      "name": "历史数据",
+      "font_class": "lishishuju",
+      "unicode": "e653",
+      "unicode_decimal": 58963
+    },
+    {
+      "icon_id": "17814561",
+      "name": "历史记录_jurassic",
+      "font_class": "lishijilu_jurassic",
+      "unicode": "e60f",
+      "unicode_decimal": 58895
+    },
+    {
+      "icon_id": "17967626",
+      "name": "点赞",
+      "font_class": "dianzan",
+      "unicode": "eea3",
+      "unicode_decimal": 61091
+    }
+  ]
+}

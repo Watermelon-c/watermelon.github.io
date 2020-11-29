@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ch-zn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>反馈页面</title>
+    <link rel="stylesheet" href="../css/init.css">
+    <link rel="stylesheet" href="css/feedback.css">
+</head>
+<body>
+    <div class="wrap">
+        <!-- 头部 -->
+        <header class="header">
+            <div class="tols">
+                <a href="../log-index.html"></a><span class="iconfont icon-left"></span></a>
+                <h3>用户反馈</h3>
+            </div>
+            <div class="search-box">
+                <div class="search">
+                    <span class="iconfont icon-sousuo"></span>
+                    <input type="text" placeholder="请输入要查询的内容">
+                </div>
+            </div>
+            <!-- 自助服务 -->
+            <div class="self-help">
+                <div class="hd">
+                    <h3 class="title">使用攻略</h3>
+                </div>
+                <ul class="nav">
+                    <li class="item">
+                        <a href="javascript:;">
+                            <span class="iconfont icon-xianxinganquansuotubiao"></span>
+                            <p>账号被盗</p>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="javascript:;">
+                            <span class="iconfont icon-geren2"></span>
+                            <p>找回密码</p>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="javascript:;">
+                            <span class="iconfont icon-huanbanhuhuan"></span>
+                            <p>手机换绑</p>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="javascript:;">
+                            <span class="iconfont icon-toutiaoyangshi"></span>
+                            <p>头条内测</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <!-- 问题分类 -->
+        <div class="problem-box">
+            <div class="hd">
+                <a href=./static/problem-sort.html class="more">
+                    更多
+                    <span class="iconfont icon-right"></span>
+                </a>
+                <h3 class="title">问题分类</h3>
+            </div>
+            <div class="bd">
+                <div class="nav">
+                    <span data-id="a" class="active">常见问题</span>
+                    <span data-id="b">个性推荐</span>
+                    <span data-id="c">账号相关</span>
+                    <span data-id="d">投诉举报</span>
+                    <span data-id="e">广告购物</span>
+                </div>
+                <div class="content">
+                    <ul>
+                        <li>
+                            <a href="javascript:;">
+                                <span class="iconfont icon-right more"></span>
+                                <span class="txt">今日头条客服电话是什么呢？ </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <span class="iconfont icon-right more"></span>
+                                <span class="txt">不喜欢推荐的文章/视频</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <span class="iconfont icon-right more"></span>
+                                <span class="txt">发文如何产生收益？</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <span class="iconfont icon-right more"></span>
+                                <span class="txt">使用过程中遇到问题</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- 攻略 -->
+        <div class="strategy">
+            <div class="hd">
+                <a href="./static/strategy.html" class="more">
+                    更多
+                    <span class="iconfont icon-right"></span>
+                </a>
+                <h3 class="title">使用攻略</h3>
+            </div>
+            <div class="bd">
+                <div class="list">
+                    <div class="exhibition">
+                        <img src="./images/ex/ex-01.png" alt="">
+                    </div>
+                    <div class="right">
+                        <h3 class="title">头条号文章审核不通过，可能是因为你踩了这7个坑</h3>
+                        <div class="time">2020-03-23</div>
+                    </div>
+                </div>
+                <div class="list">
+                    <div class="exhibition">
+                        <img src="./images/ex/ex-22.png" alt="">
+                    </div>
+                    <div class="right">
+                        <h3 class="title">头条号文章审核不通过，可能是因为你踩了这7个坑</h3>
+                        <div class="time">2020-03-23</div>
+                    </div>
+                </div>
+                <div class="list">
+                    <div class="exhibition">
+                        <img src="./images/ex/ex-13.png" alt="">
+                    </div>
+                    <div class="right">
+                        <h3 class="title">头条号文章审核不通过，可能是因为你踩了这7个坑</h3>
+                        <div class="time">2020-03-23</div>
+                    </div>
+                </div>
+                <div class="list">
+                    <div class="exhibition">
+                        <img src="./images/ex/ex-15.png" alt="">
+                    </div>
+                    <div class="right">
+                        <h3 class="title">头条号文章审核不通过，可能是因为你踩了这7个坑</h3>
+                        <div class="time">2020-03-23</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 反馈 -->
+        <div class="feedback">
+            <span class="iconfont icon-bianji"></span>
+            <span>意见反馈</span>
+        </div>
+    </div>
+</body>
+<script src="./js/rem.js"></script>
+<script src="./js/data.js"></script>
+<script>
+    (()=>{
+        let ul = document.querySelector(".content ul");
+        let nav = document.querySelector(".bd .nav");
+
+
+        nav.onclick = (e)=>{
+            let dataId = e.target.dataset.id || "a";
+            removeClass(nav.children);
+            e.target.classList.add("active");
+            ul.innerHTML = "";
+            for(let i=0;i<data[dataId].length;i++){
+                ul.innerHTML += `<li>
+                            <a href="javascript:;">
+                                <span class="iconfont icon-right more"></span>
+                                <span class="txt">${data[dataId][i]}</span>
+                            </a>
+                        </li>`;
+            }
+        }
+        //清除类
+        function removeClass(ele){
+            for(var i=0;i<ele.length;i++){
+                ele[i].classList.remove("active");
+            }
+        }
+
+        // 回退
+        var backBtn = document.querySelector(".icon-left");
+        backBtn.onclick = ()=>{
+            window.history.back(-1); 
+            console.log(1)
+        }
+    })()
+
+    
+    
+</script>
+</html>

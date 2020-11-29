@@ -1,0 +1,53 @@
+.search {
+  width: 100%;
+  min-width: 13.333333rem;
+  padding: 0.416667rem 2.5rem 0.416667rem 1.666667rem;
+  position: relative;
+  box-sizing: border-box;
+}
+.search .icon-zuojiantou {
+  position: absolute;
+  left: 0.416667rem;
+  top: 0.75rem;
+}
+.search .myinp {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.search .myinp .inp {
+  width: 100%;
+  background-color: #F4F5F6;
+  border: none;
+  outline-style: none;
+  padding: 0.208333rem;
+  padding-left: 1.25rem;
+  font-size: 0.666667rem;
+  box-sizing: border-box;
+}
+.search .myinp::after {
+  content: "";
+  height: 1px;
+  width: 100%;
+  position: absolute;
+  background: linear-gradient(to right, white, #f9ca24, #badc58, #ff7979, #686de0, white);
+  transform: translateX(-100%);
+  left: 0;
+  bottom: 0;
+  transition: 2s;
+}
+.search .myinp:hover::after {
+  transform: translateX(100%);
+}
+.search .icon-sousuo {
+  position: absolute;
+  top: 0.833333rem;
+  left: 2rem;
+}
+.search .ccoo {
+  position: absolute;
+  right: 0.416667rem;
+  top: 0.75rem;
+  font-size: 0.666667rem;
+  color: #ccc;
+}

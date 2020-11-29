@@ -1,0 +1,49 @@
+.tab{
+    position: relative;
+    margin-top: 22px;
+    display: flex;
+    width: 90%;
+    margin-left:5% ;
+    background-color:#ffffff ;
+}
+.tab .tab-h{
+    position: absolute;
+    width: 60%;
+    height: 60px;
+    margin-left: 20%;
+    margin-top: 10px;
+    background-color: #ffffff;
+    display: flex;
+    border: 5px solid #1354db;
+    border-radius: 50%;
+}
+.tab .tab-h h3{
+    margin-top: 15px;
+    margin: 0 auto;
+    font-size: 30px;
+    display: flex;
+    color: #1354db;
+}
+.tab .tab-box{
+    width: 96%;
+    margin-top:80px;
+    /* margin-left: 5%; */
+    display: flex;
+}
+.tab .tab-box .tab-box-ul{
+    width: 100%;
+    margin: 0 auto;
+}
+.tab .tab-box .tab-box-ul li{
+    width: 100%;
+    margin-top: 15px;
+    text-align: center;
+}
+.tab .tab-box .tab-box-ul li img{
+    width: 95%;
+    margin-left: 5%;
+    text-align: center;
+}
+
+
+

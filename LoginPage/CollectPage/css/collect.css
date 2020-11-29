@@ -1,0 +1,85 @@
+.content {
+  width: 100%;
+  min-width: 13.333333rem;
+  height: 29.166667rem;
+  background-color: #f4f5f6;
+}
+.content .nav {
+  height: 1.666667rem;
+  background-color: #ffffff;
+  width: 100%;
+  border-bottom: 0.041667rem solid #f4f5f6;
+}
+.content .nav .left-icon {
+  float: left;
+  margin-left: 0.5rem;
+}
+.content .nav .right-icon {
+  float: right;
+  margin-right: 0.5rem;
+  margin-top: 0.1rem;
+}
+.content .nav .right-icon .iconfont {
+  font-size: 1rem;
+}
+.content .nav .right-icon .compile {
+  font-size: 0.583333rem;
+  margin-left: 0.5rem;
+  color: #cccccc;
+}
+.content .cut {
+  width: 100%;
+  background-color: #ffffff;
+}
+.content .cut ul {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.content .cut ul li {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+.content .cut ul li a {
+  font-size: 0.583333rem;
+  font-weight: 500;
+  height: 1.333333rem;
+  display: block;
+  line-height: 1.333333rem;
+}
+.content .cut ul li a.action {
+  color: orange !important;
+  border-bottom: 2px solid orange;
+}
+.content .record {
+  margin-top: 8.333333rem;
+  text-align: center;
+  display: none;
+}
+.content .record .record-icon {
+  width: 2.666667rem;
+  height: 3.083333rem;
+  margin: 0 auto;
+}
+.content .record .record-icon .iconfont {
+  font-size: 3rem;
+  color: #cccccc;
+}
+.content .record span {
+  font-size: 0.666667rem;
+  color: #cccccc;
+  display: block;
+  margin-top: 1.041667rem;
+}
+.content .record .log {
+  width: 2.416667rem;
+  height: 1.083333rem;
+  text-align: center;
+  font-size: 0.666667rem;
+  color: white;
+  background-color: #f85959;
+  display: block;
+  line-height: 1.083333rem;
+  margin: 0 auto;
+  margin-top: 0.833333rem;
+}

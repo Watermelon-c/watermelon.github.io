@@ -1,0 +1,9 @@
+技术：
+html+css
+ajax
+jquery
+less
+
+功能：
+导航栏点击切换到男频分类
+展示小说信息
